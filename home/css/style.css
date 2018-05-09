@@ -25,7 +25,7 @@ Primary style
   height: 57px;
   width: 90%;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0 37% 1%;
 }
 .cd-horizontal-timeline .events-wrapper {
   position: relative;
@@ -142,7 +142,7 @@ Primary style
 }
 @media only screen and (min-width: 1100px) {
   .cd-horizontal-timeline {
-    margin: 6em auto;
+    margin: 15em auto;
   }
   .cd-horizontal-timeline::before {
     /* never visible - this is used in jQuery to check the current MQ */
@@ -254,6 +254,9 @@ Primary style
   -ms-transform: translateX(0);
   -o-transform: translateX(0);
   transform: translateX(0);
+  background: rgba(0,0,0,0.6);
+  margin: 0 0 0px 41%;
+    height: 8em;
 }
 .cd-horizontal-timeline .events-content li.enter-right, .cd-horizontal-timeline .events-content li.leave-right {
   -webkit-animation-name: cd-enter-right;
@@ -271,8 +274,8 @@ Primary style
   animation-direction: reverse;
 }
 .cd-horizontal-timeline .events-content li > * {
-  max-width: 667px;
-  margin: 0 auto;
+  max-width: 750px;
+  margin: 0;
 }
 .cd-horizontal-timeline .events-content h2 {
   font-weight: bold;
@@ -282,13 +285,13 @@ Primary style
   line-height: 1.2;
 }
 .cd-horizontal-timeline .events-content em {
-  display: block;
-  font-style: italic;
-  margin: 10px auto;
-  color: #fff;
+    display: block;
+    font-style: italic;
+    margin: 10px 0%;
+    color: #fff;
 }
 .cd-horizontal-timeline .events-content em::before {
-  content: '- ';
+  content: '';
 }
 .cd-horizontal-timeline .events-content p {
   font-size: 18px;
@@ -442,4 +445,7 @@ Primary style
     -o-transform: translateZ(0);
     transform: translateZ(0);
 }
+}
+li:before {
+    display: none;
 }
