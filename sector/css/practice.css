@@ -1,0 +1,492 @@
+/*-----------------------------------------------reset css----------------------------------*/
+
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, 
+dl, dt, dd, ol, ul, li,
+fieldset, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+     color: #414041;
+     font-family: 'Open Sans', sans-serif;
+}
+
+{
+    font-family: 'Open Sans', sans-serif;
+   
+}
+
+.clear{
+    float: none;
+    clear: both;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 35px;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    width: 0px !important;
+}
+
+
+/******************Dropdown menu starts here************************/
+
+.menu-icon {
+    position: absolute;
+    right: 15px;
+    top: 4px;
+    padding: 10px;
+    background-color: #2B3990;
+    width: 50px;
+    border-radius: 40px;
+    text-align: center;
+    color: #ffffff;
+    z-index: 1;
+    position: fixed;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 35px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    width: 0px !important;
+    border-bottom: 1px solid transparent;
+}
+.dropdown-container a {
+    font-size: 15px !important;
+}
+
+.menu-sutra{
+    font-size: 25px !important;
+    color: #dddddd !important;
+    border-bottom: 1px solid #414042 !important;
+    padding: 6px 8px 6px 16px !important;
+}
+.menu-menu{
+    font-size: 18px !important;
+    border-bottom: 1px solid !important;
+    padding: 6px 8px 6px 16px !important;
+}
+.sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    border-bottom: 1px solid #414042;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+    color: #f1f1f1;
+}
+
+
+
+/* Add an active class to the active dropdown button */
+
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/*************************Dropdown menu ends here*****************************/
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    border-bottom: 1px solid transparent;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 0px;
+    position: relative;
+}
+
+.menu-icon{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    padding: 7px;
+    background-color: #2B3990;
+    width: 40px;
+    border-radius: 40px;
+    text-align: center;
+    color: #ffffff;
+    z-index: 1;
+    position: fixed;
+}
+
+.search-form{
+    position: absolute;
+    right: 8%;
+    top: 22px;
+    z-index: 1;
+}
+
+.sutra{
+    position: absolute;
+    left: 0px;
+    top:20px;
+    background-color: #f1f1f1;
+    background-color:#f1f1f157;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    z-index: 1;
+    padding: 10px;
+    width: 175px;
+    position: fixed;
+}
+
+.sutra img{
+    width: 100px;
+    float: right;
+    margin-right: 20px;
+}
+
+.search-form input[type="text"]{
+    padding: 17px;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    display: inline-block;
+    width: 300px;
+    background-color: #414042;
+    opacity: .5;
+}
+
+input:focus{
+    border: 1px solid transparent;
+}
+
+.search-form input[type="text"]::placeholder{
+    color: #fff;
+    font-size: 21px;
+}
+
+.search-form button{
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 40px;
+    background-color: #2B3990;
+    padding: 13px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.search-form button img{
+        width: 20px;
+}
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* Sector section one starts here*/
+.contact-img{
+    background-image: url(../img/practice-area-banner.jpg);
+    width: 100%;
+    position: relative;
+    height: 637px;
+    /*background-position-x: -11px;*/
+    background-size: 100%;
+
+background-repeat: no-repeat;
+
+background-position: bottom center;
+}
+
+.text-contact{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    background: #414042;
+    opacity: .5;
+    padding: 0px;
+    font-size: 40px;
+}
+
+.text-contact h1{
+    color: #e5e5e5;
+    font-size: 42px;
+    padding: 1% 0;
+}
+.text-contact p{
+    color: #fff;
+    font-size: 15px;
+}
+.middle-sec{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.fisrt-line p{
+    font-size: 21px;
+    color: #414042;
+    margin: 70px 0px;
+}
+
+.grid-layout ul li{
+    float: left;
+    width: 269px;
+    height: 269px;
+    list-style-type: none;
+}
+.grid-layout{
+    margin-bottom: 5%; 
+     margin-top: 2%;  
+}
+
+.grid-img img{
+    width: 269px;
+    height: 269px;
+}
+
+.single-grid h3, .single-grid p, .single-grid a{
+    display: inline-block;
+    padding: 10px;
+}
+.single-grid h3{
+    font-size: 21px;
+}
+.single-grid p{
+    font-size: 14px;
+}
+.single-grid a{
+    font-size: 12px;
+    text-decoration: none;
+}
+.grid-img p {
+    position: absolute;
+    bottom: 10px;
+    background: #000;
+    opacity: .6;
+    color: #fff;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: 800;
+    width: 96%;
+    right: 0;
+}
+.grid-img{
+    position: relative;
+}
+
+li.single-grid.grid-txt:hover {
+    background-color: #2b3990;
+    color: #fff;
+}
+
+li.single-grid.grid-txt:hover a{
+    color: #fff;
+}
+
+/* footer section starts here*/
+
+.footer{
+    background-color: #414042;
+    color: #D1D3D4;
+    padding: 1% 5%;
+}
+
+.footer h3{
+    font-size: 15px !important;
+    margin-bottom: 5px;
+}
+
+.widget2{
+    float: left;
+    width: 17%;
+    margin-left: 2%;
+}
+
+.footer li{
+    list-style-type: none;
+}
+
+.footer li a{
+    text-decoration: none;
+     color: #D1D3D4;
+}
+
+.f-link1 li, .f-link2 li, .f-link3 address, .f-link4 address, .f-link5 address{
+    font-size: 13px;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.f-link1 li{
+    margin-left: 20%;
+}
+ul.f-link1 {
+    margin-top: 0px;
+}
+
+.footer address{
+    text-decoration: none;
+}
+
+.foot-logo img{
+    width: 40%;
+}
+
+/* bottom footer starts here*/
+
+.bottom-footer{
+    margin-top: 4%;
+    font-size: 12px !important;
+}
+
+.left-bottom{
+    float: left;
+}
+
+.right-bottom{
+    float: right;
+}
+
+.social-side li{
+    float: left;
+}
+
+.social-side li a{
+    display: inline-block;
+    padding: 10px;
+}
+
+
+/* ----------------------------------------Mobile phone for 768px width css strats here------------------------------------*/
+
+@media only screen and (max-width: 768px){
+    .search-form{ display: none !important;}
+    .we-are p{display: none;}
+    .about{clip-path: none !important;}
+    .top-name{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 500px;
+    opacity: 0.62;
+    color: #414042;
+    position: absolute;
+    left: 30%;
+    top: 40%;
+}
+h1{
+    font-size: 30px;
+}
+.sutra{
+    display: none;
+}
+.widget2{
+    width: 100%;
+    margin: 5% auto;
+    float: none;
+}
+.f-link1 li{
+    margin-left: 0%;
+}
+
+.foot-logo img {
+    width: 30%;
+}
+.contact-img{
+    height: 500px;
+}
+.text-contact {
+    position: absolute;
+    bottom: 0%;
+    left: 15%;
+    width: 60%;
+    background: #414042;
+    opacity: .5;
+    padding: 30px;
+    font-size: 37px;
+}
+
+}

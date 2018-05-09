@@ -1,0 +1,377 @@
+
+.clear{
+    float: none;
+    clear: both;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 35px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    border-bottom: 1px solid #414042;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    width: 0px !important;
+    border-bottom: 1px solid transparent;
+}
+
+
+
+/******************Dropdown menu starts here************************/
+
+.menu-icon {
+    position: absolute;
+    right: 15px;
+    top: 4px;
+    padding: 10px;
+    background-color: #2B3990;
+    width: 48px;
+    border-radius: 40px;
+    text-align: center;
+    color: #ffffff;
+    z-index: 1;
+    position: fixed;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 35px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    width: 0px !important;
+    border-bottom: 1px solid transparent;
+}
+.dropdown-container a {
+    font-size: 15px !important;
+}
+
+.menu-sutra{
+    font-size: 25px !important;
+    color: #dddddd !important;
+    border-bottom: 1px solid #414042 !important;
+    padding: 6px 8px 6px 16px !important;
+}
+.menu-menu{
+    font-size: 18px !important;
+    border-bottom: 1px solid !important;
+    padding: 6px 8px 6px 16px !important;
+}
+.sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    border-bottom: 1px solid #414042;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+    color: #f1f1f1;
+}
+
+
+
+/* Add an active class to the active dropdown button */
+
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/*************************Dropdown menu ends here*****************************/
+
+#main {
+    transition: margin-left .5s;
+    padding: 0px;
+    position: relative;
+}
+
+.menu-icon{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    padding: 7px;
+    background-color: #2B3990;
+    width: 46px;
+    border-radius: 40px;
+    text-align: center;
+    color: #ffffff;
+    z-index: 1;
+    position: fixed;
+}
+
+.search-form{
+    position: absolute;
+    right: 8%;
+    top: 22px;
+    z-index: 1;
+}
+
+.sutra{
+    position: absolute;
+    left: 0px;
+    top:20px;
+    background-color: #f1f1f1;
+    
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    z-index: 1;
+    padding: 10px;
+    width: 175px;
+    position: fixed;
+}
+
+.sutra img{
+    width: 100px;
+    float: right;
+    margin-right: 10px;
+}
+
+.search-form input[type="text"]{
+    padding: 17px;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    display: inline-block;
+    width: 300px;
+    background-color: #414042;
+    opacity: .2;
+}
+
+input:focus{
+    border: 1px solid transparent;
+}
+
+.search-form input[type="text"]::placeholder{
+    color: #fff;
+    font-size: 21px;
+}
+
+.search-form button{
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 40px;
+    background-color: #2B3990;
+    padding: 13px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.search-form button img{
+        width: 20px;
+}
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+/* footer section starts here*/
+
+.footer{
+    background-color: #414042;
+    color: #D1D3D4;
+    padding: 1% 5%;
+}
+
+.footer h3{
+    font-size: 15px !important;
+    margin-bottom: 5px;
+}
+
+
+.widget2{
+    float: left;
+    width: 17%;
+    margin-left: 2%;
+}
+
+.footer li{
+    list-style-type: none;
+}
+
+ul.f-link1 {
+    margin-top: 0px;
+}
+
+.footer ul{
+    padding: 0px !important;
+}
+
+.footer li a{
+    text-decoration: none;
+     color: #D1D3D4;
+}
+
+.f-link1 li, .f-link2 li, .f-link3 address, .f-link4 address, .f-link5 address{
+    font-size: 13px;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.f-link1 li{
+    margin-left: 20%;
+}
+
+.footer address{
+    text-decoration: none;
+}
+
+.foot-logo img{
+    width: 40%;
+}
+
+/* bottom footer starts here*/
+
+.bottom-footer{
+    margin-top: 4%;
+    font-size: 12px !important;
+}
+
+.left-bottom{
+    float: left;
+}
+
+.right-bottom{
+    float: right;
+}
+
+.social-side li{
+    float: left;
+}
+
+.social-side li a{
+    display: inline-block;
+    padding: 10px;
+}
+
+
+
+/* ----------------------------------------Mobile phone for 768px width css strats here------------------------------------*/
+
+@media only screen and (max-width: 768px){
+    .search-form{ display: none !important;}
+.widget2{
+    width: 100%;
+    margin: 5% auto;
+    float: none;
+}
+.f-link1 li{
+    margin-left: 0%;
+}
+
+.foot-logo img {
+    width: 30%;
+}
+.sutra{
+    display: none;
+}
+.middle-sec {
+    width: 97%;
+    margin: 0 auto;
+}
+    
+}
+
+
+/* ----------------------------------------Mobile phone for 400px width css strats here------------------------------------*/
+
+@media only screen and (max-width: 400px){
+    .search-form{ display: none !important;}
+    
+.widget2{
+    width: 100%;
+    margin: 5% auto;
+    float: none;
+}
+.f-link1 li{
+    margin-left: 0%;
+}
+
+.foot-logo img {
+    width: 30%;
+}
+
+.sutra{display: none;}
+}
+
+
+
