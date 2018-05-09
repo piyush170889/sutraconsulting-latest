@@ -14,7 +14,7 @@ var currCount = 1;
 var marleft;
 var marRight;
 
-var auroInterval = 3000;
+var auroInterval = 5000;
 var sliderInterval = 500;
 var counterClick = 0;
 var clickedx = 1;
@@ -130,7 +130,7 @@ var clickedx = 1;
             subuUlLi.first().addClass('subuActive');
 
             activeItem.removeClass('subuActive');
-            subuUl.animate({'marginLeft': 100 + 'px'}, 1500, function(){
+            subuUl.animate({'marginLeft': 0 + 'px'}, 1500, function(){
                 altTextPrint();
             });
             currCount = 1;
