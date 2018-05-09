@@ -7,6 +7,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="files/global.min.css"/>
+    
     <!-- GTM Data Layer -->
     <script async="" id="demandbase_js_lib" src="files/ee17d5ca.min.js.download"></script>
     <script src="files/130049887617028" async=""></script>
@@ -118,87 +119,196 @@
               </div>
               <div class="panel-content-wrapper">
                 <div class="featured-panels">
-                <section data-panel="0" class="featured-panel panel primary active"  style="background:url(&quot;img/home/Bihar - APCL - Ammapatti Village (05) sepia.jpg&quot;) 50% 50% / cover no-repeat">
-                    <picture class="panel-media" data-imgPath="img/home/beverage-computer-flower-948888.jpg"><img></img></picture>
-                    <div class="featured-block featured-home">
-                      <div class="featured-block-content">
-                        <h1 class="tagline s-heading">Creating sustainable futures through equitable and inclusive development solutions.</h1>
-                        <h1 class="tagline s-subheading">We understand and influence development decisions using knowledge, technology and power of observation.</h1>
-                      </div>
+                <style type="text/css">
+                
+#slider-div {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  overflow: hidden;
+  margin: 0 auto;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  background-color: #fff;
+  border: none;
+}
+
+#slider {
+  min-width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+#slider ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  display: inline-block;
+  float: left;
+}
+
+#slider ul li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  float: left;
+  background-color: #fff;
+  border: 0;
+  display: inline-block;
+}
+
+#slider ul li img {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  min-height: 100%;
+}
+
+#slider a {
+  width: 45px;
+  height: 45px;
+  margin: 10px;
+  position: absolute;
+  top: 42%;
+  outline: 0;
+  opacity: 0.3;
+  z-index: 100
+}
+
+#slider a:hover { opacity: 1 }
+
+/* #subuprev {
+  left: 0;
+  background: url("arrow_prev.png") no-repeat;
+  cursor: pointer;
+  position: relative;
+}
+
+#subunext {
+  right: 0;
+  background: url("arrow_next.png") no-repeat;
+  cursor: pointer;
+  position: relative;
+} */
+
+#sliderBulet {
+  height: 30px;
+    position: absolute;
+    right: 50%;
+    top: 90%;
+    overflow: hidden;
+    bottom: 0;
+}
+
+#sliderBulet>div {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  margin-right: 5px;
+  float: left;
+  background: url("css/bullet_grey.png") no-repeat;
+  text-align: center;
+}
+
+.bulletactive { background: url("css/bullet_yellow.png") no-repeat !important; }
+
+.slider-title {
+  width: 60%;
+  position: absolute;
+  left: 70vw;
+  right:0;
+  bottom: -100px; 
+  z-index: 2; /*background: url("black-dot.png");*/
+  padding: 0px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: normal;
+  font-size: 40px;
+  color: #fff;
+  display:block;
+  background:rgba(0,0,0,0.61);
+  display:none;
+}
+.caption
+{
+position: absolute;
+    top: 55%;
+    right: 0;
+    background: rgba(0, 0, 0, 0.61);
+    color: #fff;
+    padding: 1%;
+}
+.caption-2
+{
+position: absolute;
+    top: 55%;
+    right: 0;
+    background: rgba(0, 0, 0, 0.61);
+    color: #fff;
+    padding: 1%;
+}
+.caption-2 h1
+{
+    margin-right: 20vw;
+    text-align: left;
+    font-size: 26px;
+    font-weight:normal;
+}
+#slider li:before {
+    display:none;
+}
+  
+                </style>
+                  
+                  <div id="slider-div">
+                    <div id="slider">
+                        <ul>
+                             <li class="subuActive">
+                              <img src="img/home/slide-1.jpg" style="width:100vw;height:100vh" alt=""/>
+                              <div class="caption">
+                                <h1 style="font-size:26px;font-weight:normal;">Creating sustainable futures through equitable and inclusive development <br/> solutions.</h1>
+                                <h2>We understand and influence development decisions using knowledge, technology and power of observation.</h2>
+                              </div>
+                            </li> 
+                              <li>
+                              <img src="img/home/slide-2.jpg" style="width:100vw;height:100vh" alt=""/>
+                              <div class="caption-2">
+                                <h1>Solutions for inclusive growth and opportunity</h1>
+                                
+                              </div>
+                              </li>
+                               <li>
+                              <img src="img/home/slide-3.jpg" style="width:100vw;height:100vh" alt=""/>
+                              <div class="caption-2">
+                                <h1>Visioning a better tomorrow</h1>
+                                
+                              </div>
+                              </li>
+                               <li>
+                              <img src="img/home/slide-4.jpg" style="width:100vw;height:100vh" alt=""/>
+                              <div class="caption-2">
+                                <h1>Redefining development paradigm and planting for the future</h1>
+                                
+                              </div>
+                              </li>
+                            <!-- <li><img src="https://placeimg.com/1000/420/tech" alt="Image Caption 5"/></li> -->
+                        </ul>
                     </div>
-                    <div class="featured-navigation slide-navigation">
-                      <a data-index="0" data-level="featured" class="pbutton" data-digitaldata-location="homepage:featured-navigation" data-digitaldata-linkname="01">01</a>
-                      <!-- <a data-index="1" data-level="featured" class="pbutton" data-digitaldata-location="homepage:featured-navigation" data-digitaldata-linkname="02">02</a> -->
-                      <a data-index="2" data-level="featured" class="pbutton" data-digitaldata-location="homepage:featured-navigation" data-digitaldata-linkname="03">03</a>
-                      <a data-index="3" data-level="featured" class="pbutton" data-digitaldata-location="homepage:featured-navigation" data-digitaldata-linkname="04">04</a>
-                      <a data-index="4" data-level="featured" class="pbutton" data-digitaldata-location="homepage:featured-navigation" data-digitaldata-linkname="05">05</a>
-                    </div>
-                  </section>
-                  <!-- <section data-panel="1" class="featured-panel panel"  style="background:url(&quot;img/home/Bihar - APCL - Ammapatti Village (05) sepia.jpg&quot;) 50% 50% / cover no-repeat">
-                    <picture class="panel-media" data-imgPath="img/home/beverage-computer-flower-948888.jpg"><img></img></picture>
-                    <div class="featured-block featured-home">
-                      <div class="featured-block-content">
-                        <h1 class="tagline s-heading">Welcome to Sutra Consulting</h1>
-                        <h1 class="tagline s-subheading">Simplify The Complex With Expert Opinions At Sutra</h1>
-                      </div>
-                    </div>
-                    <div class="featured-navigation slide-navigation">
-                      <a data-index="0" data-level="featured" class="pbutton" data-digitaldata-location="homepage:featured-navigation" data-digitaldata-linkname="01">01</a>
-                      <a data-index="1" data-level="featured" class="pbutton" data-digitaldata-location="homepage:featured-navigation" data-digitaldata-linkname="02">02</a>
-                      <a data-index="2" data-level="featured" class="pbutton" data-digitaldata-location="homepage:featured-navigation" data-digitaldata-linkname="03">03</a>
-                      <a data-index="3" data-level="featured" class="pbutton" data-digitaldata-location="homepage:featured-navigation" data-digitaldata-linkname="04">04</a>
-                      <a data-index="4" data-level="featured" class="pbutton" data-digitaldata-location="homepage:featured-navigation" data-digitaldata-linkname="05">05</a>
-                    </div>
-                  </section> -->
-                  <section data-panel="2" class="featured-panel panel"  style="background:url(&quot;img/home/IMG_2804 (Copy).jpg&quot;) 50% 50% / cover no-repeat">
-                    <picture class="panel-media" data-imgPath="img/home/beverage-computer-flower-948888.jpg"><img></img></picture>
-                    <div class="featured-block featured-home">
-                      <div class="featured-block-content">
-                        <h1 class="tagline s-heading">Solutions for inclusive growth and opportunity</h1>
-                        <h1 class="tagline s-subheading"></h1>
-                      </div>
-                    </div>
-                    <div class="featured-navigation slide-navigation">
-                      <a data-index="0" data-level="featured" class="pbutton" data-digitaldata-location="homepage:featured-navigation" data-digitaldata-linkname="01">01</a>
-                      <!-- <a data-index="1" data-level="featured" class="pbutton" data-digitaldata-location="homepage:featured-navigation" data-digitaldata-linkname="02">02</a> -->
-                      <a data-index="2" data-level="featured" class="pbutton" data-digitaldata-location="homepage:featured-navigation" data-digitaldata-linkname="03">03</a>
-                      <a data-index="3" data-level="featured" class="pbutton" data-digitaldata-location="homepage:featured-navigation" data-digitaldata-linkname="04">04</a>
-                      <a data-index="4" data-level="featured" class="pbutton" data-digitaldata-location="homepage:featured-navigation" data-digitaldata-linkname="05">05</a>
-                    </div>
-                  </section>
-                  <section data-panel="3" class="featured-panel panel"  style="background:url(&quot;img/home/IMG_2921 (Copy).jpg&quot;) 50% 50% / cover no-repeat">
-                    <picture class="panel-media" data-imgPath="img/home/beverage-computer-flower-948888.jpg"><img></img></picture>
-                    <div class="featured-block featured-home">
-                      <div class="featured-block-content">
-                        <h1 class="tagline s-heading">Visioning a better tomorrow</h1>
-                        <h1 class="tagline s-subheading"></h1>
-                      </div>
-                    </div>
-                    <div class="featured-navigation slide-navigation">
-                      <a data-index="0" data-level="featured" class="pbutton" data-digitaldata-location="homepage:featured-navigation" data-digitaldata-linkname="01">01</a>
-                     <!--  <a data-index="1" data-level="featured" class="pbutton" data-digitaldata-location="homepage:featured-navigation" data-digitaldata-linkname="02">02</a> -->
-                      <a data-index="2" data-level="featured" class="pbutton" data-digitaldata-location="homepage:featured-navigation" data-digitaldata-linkname="03">03</a>
-                      <a data-index="3" data-level="featured" class="pbutton" data-digitaldata-location="homepage:featured-navigation" data-digitaldata-linkname="04">04</a>
-                      <a data-index="4" data-level="featured" class="pbutton" data-digitaldata-location="homepage:featured-navigation" data-digitaldata-linkname="05">05</a>
-                    </div>
-                  </section>
-                  <section data-panel="4" class="featured-panel panel"  style="background:url(&quot;img/home/mumbai 038.jpg&quot;) 50% 50% / cover no-repeat">
-                    <picture class="panel-media" data-imgPath="img/home/beverage-computer-flower-948888.jpg"><img></img></picture>
-                    <div class="featured-block featured-home">
-                      <div class="featured-block-content">
-                        <h1 class="tagline s-heading">Redefining development paradigm and planting for the future</h1>
-                        <h1 class="tagline s-subheading"></h1>
-                      </div>
-                    </div>
-                    <div class="featured-navigation slide-navigation">
-                      <a data-index="0" data-level="featured" class="pbutton" data-digitaldata-location="homepage:featured-navigation" data-digitaldata-linkname="01">01</a>
-                      <!-- <a data-index="1" data-level="featured" class="pbutton" data-digitaldata-location="homepage:featured-navigation" data-digitaldata-linkname="02">02</a> -->
-                      <a data-index="2" data-level="featured" class="pbutton" data-digitaldata-location="homepage:featured-navigation" data-digitaldata-linkname="03">03</a>
-                      <a data-index="3" data-level="featured" class="pbutton" data-digitaldata-location="homepage:featured-navigation" data-digitaldata-linkname="04">04</a>
-                      <a data-index="4" data-level="featured" class="pbutton" data-digitaldata-location="homepage:featured-navigation" data-digitaldata-linkname="05">05</a>
-                    </div>
-                  </section>
                 </div>
+                  
+                
+                </div>
+}
               </div>
             </article>
             <article data-panel="1" class="has-featured1 top-level panel" style="background:url(img/Growth-Story.jpg);background-repeat: no-repeat;background-size: cover;">
@@ -433,7 +543,7 @@
       </div>
       <div class="f-office1 footer-mg-bottom">
       <p class="foo-heading">Delhi Office</p>
-      <span>B- 117 , Second Floor<br>Sarvodaya Enclave,<br>New Delhi 110017, India<br>Tel:- +91 11 41017772</span>
+      <span>FD-341, Ground Floor, Sector-III.<br>Saltlake, Kolkata 700097<br>West bengal, India<br>Tel:- +91 33 40013149</span>
       </div>
       <div class="f-office1 footer-mg-bottom">
       <p class="foo-heading">Bhubaneswar Office</p>
@@ -487,6 +597,12 @@
       }
     </script>
     <script src="js/jquery-2.1.4.js"></script>
+    <script>
+            $(document).ready(function () {
+                $('#slider').minislider();
+            });
+        </script>
+    <script src="js/minislider.js"></script>
     <script src="js/jquery.mobile.custom.min.js"></script>
     <script src="js/main.js"></script>
   </body>
