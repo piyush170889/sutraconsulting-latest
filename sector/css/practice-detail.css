@@ -383,6 +383,7 @@ input:focus{
 .select-work{
     display: inline-block;
     margin-bottom: 20px;
+	font-weight: bold;
 }
 
 .previous-project{
@@ -639,7 +640,7 @@ input:focus{
 
 
 
-/* CSS For Only Water Resources and Irrigation 2 Grid Project Showcase */
+/* CSS Only for 3 grid section */
 .engineering-img {
     background-image: url(../img/Engineering.jpg);
     width: 100%;
@@ -668,3 +669,26 @@ input:focus{
     font-size: 12px;
     text-align: center;
 }
+
+/* CSS Only for Urban and Development Infrastructure */
+.three-grid-sector-img{
+    text-align: center;
+    padding: 50px 0px;
+    width: 31%;
+    float: left;
+}
+.three-grid-sector-img img {
+    width: 322px;
+}
+.three-grid-middle-sec{
+    width: 75%;
+    margin: 0 auto;
+}
+
+.three-grid-white-p{
+    color: #fff;
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+}
+/* CSS Only for 3 grid section */

@@ -186,12 +186,13 @@ body{
     top: 20px;
     padding: 7px;
     background-color: #2B3990;
-    width: 40px;
+    width: 55px;
     border-radius: 40px;
     text-align: center;
     color: #ffffff;
     z-index: 1;
     position: fixed;
+	height: 55px;
 }
 
 .search-form{
@@ -293,6 +294,11 @@ input:focus{
     margin: 0 auto;
 }
 
+.middle-sec-carousel{
+    width: 45%;
+    margin: 0 auto;
+}
+
 .title-download{
     text-align: center;
 }
@@ -389,7 +395,7 @@ input:focus{
 
 /*gallery slider css starts here*/
 .gallery{
-    background-color: #414042;
+    background-color: #2d2c2d;
     padding: 5%;
 }
 .title-gallery{
@@ -494,4 +500,13 @@ input:focus{
 .social-side li a{
     display: inline-block;
     padding: 10px;
+}
+
+
+/*Carousel*/
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 100%;
 }
