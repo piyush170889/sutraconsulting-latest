@@ -367,6 +367,15 @@ input:focus{
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
+.contact-img-8{
+    background-image: url(../img/sector-banner/urban-planning.jpg);
+    width: 100%;
+    position: relative;
+    height: 637px;
+    /*background-position-x: -11px;*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
 .text-contact{
     position: absolute;
     bottom: 0%;
