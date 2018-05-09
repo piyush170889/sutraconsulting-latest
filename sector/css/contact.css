@@ -617,6 +617,11 @@ background-position: center center;
 .sutra{display: none;}
 }
 
+.full-width img {
+	width:100%;
+	height:100%;
+}
+
 
 
 
