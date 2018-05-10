@@ -256,7 +256,7 @@ Primary style
   transform: translateX(0);
   background: rgba(0,0,0,0.6);
   margin: 0 0 0px 41%;
-    height: 8em;
+    height: auto;
 }
 .cd-horizontal-timeline .events-content li.enter-right, .cd-horizontal-timeline .events-content li.leave-right {
   -webkit-animation-name: cd-enter-right;
